@@ -1,0 +1,192 @@
+.container-principal
+{
+    display: inline block;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8da399b6;
+}
+nav {
+    height: 10vh;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    background: linear-gradient( 135deg, #0000ffdc 0%, #284c81 40%, #FF003F 100% );
+    clip-path: polygon(0 0, 100% 1%, 100% 95%, 64% 100%, 29% 100%, 0 95%);
+
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+}
+
+/* nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0e3742e0;
+    height: 4px;
+    width: 0;
+    transition: all .3s ease-in-out;
+} */
+
+nav ul li:hover::after {
+    width: 90%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(-1px 5px 1px #0e3742bb);
+}
+input{
+    width: 70%;
+    height: 90%;
+    border-radius: 25px;
+    font-size: 1.2em;
+    background-color: #fcfcfcf6;
+}
+@media  screen and (max-width: 600px) {
+    nav ul li a {
+        font-size: 0.9em;
+    }
+    input{
+        width: 40%;
+        font-size: 0.5em;
+    }
+    img{
+        width: 90%;
+        margin-top: 5em;
+    }
+    .typing-text h1{
+        font-size: 1.5em;
+    }
+}
+.container_principal
+{
+    width: 100%;
+    height: 220vh;
+
+}
+p img{
+    width: 10%;
+
+}
+p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.tesla{
+    /* background-color: #6050DC; */
+    background: linear-gradient( 45deg,#EF0107,#00008B,#6F00FF);
+    height: 50vh;
+     border-radius: 50% 0% 50% 0%;
+    justify-content: center;
+    display: block;
+    transition: 2s;
+    animation: anime alternate 5s ease-in both 8;
+    clip-path: polygon(6% 0, 100% 0%, 94% 99%, 0% 100%);
+
+}
+/* .tesla:hover{
+     clip-path: polygon(0 0, 100% 0, 100% 59%, 100% 95%, 50% 100%, 0 96%); 
+} */
+
+
+#imaget{
+    width: 35%;
+    height: 40vh;
+}
+.img1-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ h1 {
+    padding-top: 1em;
+    filter: drop-shadow(-1px 5px 1px #0e3742bb);
+    font-size: 4em;
+    color: #0000FF;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    margin:0 auto;
+    animation: typing 4s steps(60, end), blink-caret .5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+.ford{
+    height: 50vh;
+    background: linear-gradient( 45deg,#00008B,#6F00FF,#083908);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+.contact{
+    margin-top: 2em;
+    width: 100%;
+    height: 20vh;
+    background: rgb(119, 111, 111);
+    color: white;
+
+}
+h1 img{
+    width: 20%;
+    
+}
+h4 img{
+    width: 5%;
+}
+.contact .img2-content a img{
+    width: 20%;
+    border-radius: 15px;
+    margin-top: 2em;
+}
+.img2-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    width: 50%;
+}
+.img3-content{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: 2px solid blue;
+}
+.About{
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+.About h1 img{
+    border-radius: 25%;
+    width: 15%;
+}
