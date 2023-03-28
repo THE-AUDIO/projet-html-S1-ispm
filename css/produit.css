@@ -10,14 +10,17 @@ body{
     height: 100%;
     padding: 0;
     box-sizing: border-box;
-    background-color: #8da399b6;
+    background-color: #f7fbfab6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 nav {
-    height: 10vh;
+    height: 13vh;
     margin: 0;
     width: 100%;
     display: flex;
-    background: linear-gradient( 135deg, #0000ffdc 0%, #284c81 40%, #FF003F 100% );
+    background: linear-gradient( 45deg,#00008B,#6F00FF);
+    /* background: linear-gradient( 135deg, #0000ffdc 0%, #284c81 40%, #FF003F 100% ); */
     clip-path: polygon(0 0, 100% 1%, 100% 95%, 64% 100%, 29% 100%, 0 95%);
 
 }
@@ -36,24 +39,13 @@ nav ul li {
     position: relative;
 }
 
-/* nav ul li::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #0e3742e0;
-    height: 4px;
-    width: 0;
-    transition: all .3s ease-in-out;
-} */
-
 nav ul li:hover::after {
     width: 90%;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8em;
     color: white;
     font-weight: bold;
     filter: drop-shadow(-1px 5px 1px #0e3742bb);
@@ -61,10 +53,22 @@ nav ul li a {
 input{
     width: 70%;
     height: 90%;
-    border-radius: 25px;
+    border-radius: 17px;
     font-size: 1.2em;
     background-color: #fcfcfcf6;
+    margin: 5px;
+    padding: .7rem 1rem;
+    outline: 0;
+    border: none;
+    box-shadow: 0px 0px 11px #1a1a1a47;
+    color: #888585e4;
+    letter-spacing: 1px;
 }
+
+input::placeholder {
+    opacity: .3;
+}
+
 @media  screen and (max-width: 600px) {
     nav ul li a {
         font-size: 0.9em;
@@ -74,7 +78,7 @@ input{
         font-size: 0.5em;
     }
     img{
-        width: 90%;
+        width: 140%;
         margin-top: 5em;
     }
     .typing-text h1{
@@ -96,34 +100,30 @@ p{
     justify-content: center;
     display: flex;
 }
+
 .tesla{
-    /* background-color: #6050DC; */
     background: linear-gradient( 45deg,#EF0107,#00008B,#6F00FF);
     height: 50vh;
-     border-radius: 50% 0% 50% 0%;
+    border-radius: 50% 0% 50% 0%;
     justify-content: center;
     display: block;
     transition: 2s;
     animation: anime alternate 5s ease-in both 8;
     clip-path: polygon(6% 0, 100% 0%, 94% 99%, 0% 100%);
-
 }
-/* .tesla:hover{
-     clip-path: polygon(0 0, 100% 0, 100% 59%, 100% 95%, 50% 100%, 0 96%); 
-} */
-
 
 #imaget{
     width: 35%;
     height: 40vh;
 }
+
 .img1-content{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
- h1 {
+h1 {
     padding-top: 1em;
     filter: drop-shadow(-1px 5px 1px #0e3742bb);
     font-size: 4em;
@@ -164,10 +164,16 @@ h4 img{
     border-radius: 15px;
     margin-top: 2em;
 }
-.img2-content{
+.img2-content  {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.img2-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 h3{
     text-align: center;
@@ -177,8 +183,13 @@ h3{
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     border: 2px solid blue;
+    /* background: linear-gradient( 45deg,#EF0107,#00008B,#6F00FF); */
+    background: linear-gradient( 45deg,#00008B,#6F00FF);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
 }
 .About{
     justify-content: center;

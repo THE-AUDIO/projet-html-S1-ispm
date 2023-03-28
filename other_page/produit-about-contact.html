@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="../css/produit.css">
 </head>
 <body>
-    <nav>  
+    <nav>
         <ul class="navbarre">
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="#">Produits</a></li>
-            <li><a href="#About">About</a></li>
+            <li><a href="#About">A propos</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><input type="search" name="recherche" placeholder="rechercher"></li>
-        </ul>                    
-    </nav> 
-    <div class="typing-text"><h1>Nos produits disponibles</h1></div>
+            <li><input type="text" name="recherche" placeholder="Rechercher ..."></li>
+        </ul>
+    </nav>
+    <div class="teste"></div>
+    <div class="introduction"><h1>Nos produits disponibles</h1></div>
     <div class="container_principal">
+
         <p><img src="../img/Tesla_logo.png" alt=""></p>
 
         <div class="tesla">
-                  
+
                     <div class="img1-content">
                         <div class="div-img1" id="imaget"><img src="../img/compositor-removebg-preview.png" alt=""></div>
                         <div class="div-img2" id="imaget"><img src="../img/S0-tesla-aurait-beaucoup-moins-de-commandes-qu-avant-740199-removebg-preview.png" alt=""></div>
@@ -31,7 +33,7 @@
         <p><img src="../img/logo/Ford-Logo-1961.png" alt=""></p>
 
         <div class="ford">
-                  
+
                     <div class="img1-content">
                         <div class="div-img1" id="imaget"><img src="../img/ford" alt=""></div>
                         <div class="div-img2" id="imaget"><img src="../img/home-ford-focus-1-750x410-removebg-preview.png" alt=""></div>
@@ -40,8 +42,8 @@
         <div class="About" id="About">
             <h1><img src="../img/us-icon-sign-us-icon-sign-white-background-142039744.jpg" alt=""></h1>
             <div class="img3-content">
-                
-                <h2>  Je m'appelle THE Audio Nandraina, étudie au sein de l'Institut Supérieur Polytechnique de Madagascar en suivant le parcour de électronique Système Informatique et Intelligence Artificiel. Je suis un jeune motivé et challenger. Je suis passionné du métier de développeur Web après que j'ai eu mon Bac et d'ici trois ans j'aimerais travailler au sein d'une boîte informatique pours mettre en pratique les connaissances que j'ai pris durant mon trois année universitaire.. contact me with : <br>
+
+                <h2>  Je m'appelle THE Audio Nandraina, étudie au sein de l'Institut Supérieur Polytechnique de Madagascar en suivant le parcour de électronique Système Informatique et Intelligence Artificiel. Je suis un jeune motivé et challenger. Je suis passionné du métier de développeur Web après que j'ai eu mon Bac et d'ici trois ans j'aimerais travailler au sein d'une boîte informatique pours mettre en pratique les connaissances que j'ai pris durant mon trois année universitaire.. <br> contacter moi sur : <br>
                     email:nandraina.dev22@gmail.com <br>
                     telephone : +26142645077
 
@@ -49,16 +51,45 @@
             </div>
         </div>
         <h1><img src="../img/Contact us-amico.png" alt=""></h1>
-        <div class="contact" id="contact">    
+        <div class="contact" id="contact">
             <div class="img2-content">
                 <a href="nandraina.dev22@gmail.com"><img src="../img/logo/envelope-solid.svg" alt=""></a>
                 <a href="https://github.com/THE-AUDIO"><img src="../img/logo/github.svg" alt=""></a>
-                <a href="https://www.facebook.com/profile.php?id=100087081336013"><img src="../img/logo/facebook.svg" alt=""></a> 
+                <a href="https://www.facebook.com/profile.php?id=100087081336013"><img src="../img/logo/facebook.svg" alt=""></a>
             </div>
         </div>
 
     </div>
     <script src="../script/script.js"></script>
-</body>
+    <!-- <script>
+        let data = [
+            {
+                nom: "lahatra",
+                prenoms: "anjara"
+            },
+            {
+                nom: "Jesoa",
+                prenoms: "Kristy"
+            },
+            {
+                nom: "Avotra",
+                prenoms: "Santatra"
+            },            {
+                nom: "lahatra",
+                prenoms: "anjara"
+            },
+        ];
+        
 
+        const teste = document.querySelector('.teste');
+        const search = document.querySelector("input[type=text]");
+        search.addEventListener("keyup", (e) => {
+            if(!e.target.value) teste.innerHTML = "";
+            data.filter(value => value.nom.includes(e.target.value)).forEach(element => {
+                teste.innerHTML += `<div>${element.nom}</div><div>${element.prenoms}</div>`; 
+            });
+        });
+
+    </script> -->
+</body>
 </html>
