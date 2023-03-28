@@ -8,7 +8,7 @@ function type() {
   if (i < text.length) {
     tapageDeText.querySelector('h2').textContent += text.charAt(i);
     i++;
-    setTimeout(type, 300);
+    setTimeout(type, 100);
   }
 }
 window.addEventListener('load', function() {
